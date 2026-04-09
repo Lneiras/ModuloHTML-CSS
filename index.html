@@ -1,26 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8"><!-- acepte caracteres especiales -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Laura Neira</title> <!-- titulo de la pagina -->
-    <link rel="stylesheet" href="style.css"> <!-- esto conecta con CSS-->
+    <title>Portafolio Laura Neira</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav id = "navbar">
-            <div class = "logo">Laura<span>Neira</span></div>
-            <ul class = "nav-links">
-                <li><a href = "#inicio">Inicio</a></li>
-                <li><a href = "#proyectos">Proyectos</a></li>
-                <li><a href = "#mascotas">Mascotas</a></li>
-            </ul>
-        </nav>
-    
+    <header class="encabezado-portafolio">
+        <h1>Portafolio de Laura Neira</h1>
     </header>
-<!-- para comentarios -->
-    <main>
 
+    <main>
+        <article class = "presentacion">
+            <img src="IMG/laura.jpg" alt="Foto de Laura Neira" class="foto-perfil">
+            <h2>Hola, soy Laura</h2>
+            <p>Soy una desarrolladora de software junior centrada en crear soluciones prácticas y fortalecer mis bases de programación a través de proyectos enfocados en casos de uso reales.</p>
+                <ul class ="Estudios">
+                    <h3>Actualmente aprendiendo</h3>
+                    <li>Python avanzado (código limpio, estructura, mejores prácticas)</li>
+                    <li>HTML y CSS (fundamentos del desarrollo web)</li>
+                    <li>SQL (diseño y consultas de bases de datos)</li>
+                    <li>Scrum (metodologías ágiles y trabajo en equipo)</li>
+                    <li>Markdown (documentación técnica)</li>
+                </ul>
+            <p>Si quieres conocer mis mascotas, <a href="mascotas.html">haz clic aquí</a>.</p>
+        </article>
+    </main>
+    <main>
+        <section class="proyectos">
+            <h2>Proyectos Destacados</h2>
+                <div class="proyecto">
+                    <h3>Sistema de gestión de inventario en python</h3>
+                    <p>Aplicación para la gestión de productos con persistencia de datos mediante archivos CSV</p>
+                    <a href="https://github.com/Lneiras/Proyecto-inventario-Riwi.git" target="_blank">ver proyecto en github</a>
+                </div>
+                <div class="proyecto">
+                    <h3>Sistema de gestión de estudiantes</h3>
+                    <p>Aplicación para la gestión de información de estudiantes con funcionalidades de registro, edición y eliminación.</p>
+                    <a href="https://github.com/Lneiras/Sistema-Gesti-n-Estudiantes.git" target="_blank">ver proyecto en github</a>
+                </div>
+        </section>
+
+        <footer class="pie-pagina">
+            <h2>Contacto</h2>
+            <p>Nombre: <input type="text" name="" id=""> </p>
+            <p>Teléfono: <input type="tel" name="" id=""> </p>
+            <p>Email: <input type="email" name="" id=""> </p>
+            <button type="submit">Enviar</button>
+        </footer>
     </main>
 
 </body>
