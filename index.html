@@ -7,16 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="encabezado-portafolio">
+    <header>
         <h1>Portafolio de Laura Neira</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="mascotas.html">Mis Mascotas</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <article class = "presentacion">
-            <img src="IMG/laura.jpg" alt="Foto de Laura Neira" class="foto-perfil">
+
+        <section>
+            <figure>
+                <img src="IMG/laura.jpg" alt="Foto de Laura Neira" width="200" height="150">
+            </figure>
             <h2>Hola, soy Laura</h2>
             <p>Soy una desarrolladora de software junior centrada en crear soluciones prácticas y fortalecer mis bases de programación a través de proyectos enfocados en casos de uso reales.</p>
-                <ul class ="Estudios">
+                <ul>
                     <h3>Actualmente aprendiendo</h3>
                     <li>Python avanzado (código limpio, estructura, mejores prácticas)</li>
                     <li>HTML y CSS (fundamentos del desarrollo web)</li>
@@ -24,32 +34,54 @@
                     <li>Scrum (metodologías ágiles y trabajo en equipo)</li>
                     <li>Markdown (documentación técnica)</li>
                 </ul>
-            <p>Si quieres conocer mis mascotas, <a href="mascotas.html">haz clic aquí</a>.</p>
-        </article>
-    </main>
-    <main>
-        <section class="proyectos">
+        </section>
+
+        <section>
             <h2>Proyectos Destacados</h2>
-                <div class="proyecto">
+                <article>
                     <h3>Sistema de gestión de inventario en python</h3>
                     <p>Aplicación para la gestión de productos con persistencia de datos mediante archivos CSV</p>
                     <a href="https://github.com/Lneiras/Proyecto-inventario-Riwi.git" target="_blank">ver proyecto en github</a>
-                </div>
-                <div class="proyecto">
+                    <!-- con 'target="_blank"' hace que el enlace se abra en otra pagina-->
+                </article>
+                <article>
                     <h3>Sistema de gestión de estudiantes</h3>
                     <p>Aplicación para la gestión de información de estudiantes con funcionalidades de registro, edición y eliminación.</p>
                     <a href="https://github.com/Lneiras/Sistema-Gesti-n-Estudiantes.git" target="_blank">ver proyecto en github</a>
-                </div>
+                </article>
+                <article>
+                    <h3>Sistema de gestión de clientes para un gimnasio</h3>
+                    <p>Aplicación para la gestión de información de clientes con funcionalidades de registro, edición, búsqueda y eliminación.</p>
+                    <a href="https://github.com/Lneiras/Sistema-de-Gesti-n-de-Clientes-para-un-Gimnasio.git" target="_blank">ver proyecto en github</a>
+                </article>
+        </section>  
+
+        <section>
+            <h2>Contacto</h2>
+            <form action="" method="post">
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </p>
+                <p>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono" title="ingresa 10 digitos" placeholder="1234567890" pattern="[0-9]{10}">
+                    <!-- con type="tel" se espera que el usuario ingrese un número de teléfono, aunque no es obligatorio, pero si se ingresa algo que no es un número de teléfono, el formulario no se enviará-->
+                    <!-- con patttern le decimos al usuario con ([0-9]) que ingrese numeros del cero al 9 y con {10} que son 10 caracteres -->
+                </p>
+                <p>
+                    <label for="email">Emaril:</label>
+                    <input type="email" name="correo electronico" id="email" required placeholder="correo@example.com"> <!-- con required hacemos que el campo sea obligatorio-->
+                    <!-- con placeholder damos un ejemplo de lo que se debe escribir en el campo-->
+                </p>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
 
-        <footer class="pie-pagina">
-            <h2>Contacto</h2>
-            <p>Nombre: <input type="text" name="" id=""> </p>
-            <p>Teléfono: <input type="tel" name="" id=""> </p>
-            <p>Email: <input type="email" name="" id=""> </p>
-            <button type="submit">Enviar</button>
-        </footer>
     </main>
+        <footer>
+            <p>© 2026 Laura Neira. Todos los derechos reservados.</p>
+        </footer>
 
 </body>
 </html>
