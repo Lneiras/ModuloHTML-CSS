@@ -6,9 +6,11 @@
 
 body{
     font-family: Arial, sans-serif;
-    background-color: #82004C;
+    background-color: #7bb6ec;
     padding: 0px;
 }
+
+
 
 #encabezado{
     /* Esto lo deja fijo */
@@ -18,18 +20,18 @@ body{
     width: 100%;       /* Asegura que ocupe todo el ancho */
     z-index: 1000;     /* Lo pone "encima" de todo lo demás */
     /**/
-    background: #000F1A; /* color de fondo del encabezado */
-    color: #4C8200;
+    background: #00090f; /* color de fondo del encabezado */
+    color: #05b8ff;
     padding:  0 32px; /* espacio dentro del encabezado */
     height: 60px;
-    border-bottom:   1px solid white; /* línea de separación debajo del encabezado */
+    border-bottom:   1.5px solid white; /* línea de separación debajo del encabezado */
     display: flex; /* para organizar el contenido en una fila */
     justify-content: space-between; /* para separar el título y la navegación */
     align-items: center; /* para alinear verticalmente el contenido */
 }
 
 #encabezado nav a{
-    color: #4C8200; /* color de la letra */
+    color: #05b8ff; /* color de la letra */
     text-decoration: none; /* para quitar subrayado */
     margin-left: 20px; /* espacio entre enlaces de 20 pixeles */
     font-weight: lighter; /* para hacer la letra más delgada */
@@ -38,14 +40,15 @@ body{
 #encabezado nav a:hover{
     font-size:   0.95rem; /* para hacer la letra un poco más grande al pasar el mouse */
     font-weight: 500; /* para hacer la letra un poco más gruesa al pasar el mouse */
-    color: #000F96; /* color de la letra al pasar el mouse */
+    color: #f9f9ff; /* color de la letra al pasar el mouse */
     transition:  color 0.2s; /* para suavizar el cambio de color */
 }   
 
 .pie-de-pagina{
     text-align: left; /* para alinear el texto a la izquierda */
     padding: 20px;  
-    margin-top: 0px;
+    margin-top: 30px;
+    color: #00090f;
 }
 
 /* Estilos para la sección "Sobre mí" */
@@ -55,7 +58,9 @@ body{
     align-items: center; /* para alinear verticalmente el contenido */
     gap: 20px; /* espacio entre la imagen y el texto */
     padding: 20px; /* espacio dentro de la sección */
-    margin-top: 80px;
+    margin-top: 60px;
+    height: 100vh;
+    place-content: center;
 }
 
 .foto-perfil__contenedor {
@@ -67,13 +72,14 @@ body{
 }
 .foto-perfil img {
     flex-shrink: 0;  /* no se encoge */
-    width: 200px; /* ancho fijo */
-    height: 200px; /* alto fijo para mantener la forma circular */
+    width: 300px; /* ancho fijo */
+    height: 300px; /* alto fijo para mantener la forma circular */
     border-radius: 50%; /* para hacer la imagen circular */
     display: flex; /* para organizar el contenido en una fila */
     align-items: center; /* para alinear verticalmente el contenido */
     justify-content: center;   /* para centrar la imagen horizontalmente */
-    border: 3px solid #82004C;
+    border: 3px solid #05b8ff;;
+    object-fit: cover;
 }
 
 .sobre-mi__contenido{
@@ -85,24 +91,27 @@ body{
 .sobre-mi__contenido h2{
     font-size: 1.5rem; /* tamaño del título */
     margin-bottom: 10px; /* espacio debajo del título */
-    color: #4C8200; /* color del título */
+    color: #00090f; /* color del título */
     font-weight: bold; /* para hacer el título un poco más grueso */
 }
 
 /* Estilos para estudios */
 
 .estudios{
-    background-color: #64023b; /* color de fondo de la sección */
+    background-color: #65adf0; /* color de fondo de la sección */
     border-radius: 10px; /* para redondear las esquinas de la sección */
-    padding: 20px; /* espacio dentro de la sección */
+    padding: 30px; /* espacio dentro de la sección */
     margin: 20px auto; /* para centrar la sección y agregar espacio alrededor */
-    width: 80%; /* para que la sección ocupe el 80% del ancho de la página */
+    width: 70%; /* para que la sección ocupe el 80% del ancho de la página */
+    max-height: fit-content; 
+    height: 100vh;
+    place-content: center;
 }
 
 .estudios h3{
     font-size: 1.5rem; /* tamaño del título */
     margin-bottom: 10px; /* espacio debajo del título */
-    color: #4C8200; /* color del título */
+    color: #00090f; /* color del título */
     font-weight: bold; /* para hacer el título un poco más grueso */
     display: flex; /* para organizar el contenido en una fila */
     justify-content: center; /* para centrar el título horizontalmente */
@@ -113,21 +122,23 @@ body{
     list-style: none; /* para quitar los puntos de la lista */
     padding-left: 20px; /* espacio a la izquierda de la lista */
     color :white; /* color del texto de la lista */
-
+    text-align: center;
 }
 
 /* Estilos para la sección de proyectos */
 
 .proyectos{
-    padding:    64px 32px;/* espacio dentro de la sección */
-    max-width:  100%; /* para limitar el ancho de la sección */
-    margin:     0 auto; /* para centrar la sección y agregar espacio alrededor */
+    padding: 30px;/* espacio dentro de la sección */
+    max-width: 100%; /* para limitar el ancho de la sección */
+    margin: 20px auto; /* para centrar la sección y agregar espacio alrededor */
+    height: 100vh;
+    place-content: center;
 }
 
 .proyectos h2{
     font-size: 1.5rem; /* tamaño del título */
     margin-bottom: 10px; /* espacio debajo del título */
-    color: #4C8200; /* color del título */
+    color: #00090f; /* color del título */
     font-weight: bold; /* para hacer el título un poco más grueso */
     display: flex; /* para organizar el contenido en una fila */
     justify-content: center; /* para centrar el título horizontalmente */
@@ -142,7 +153,7 @@ body{
 }
 
 .proyecto-contenedor article{
-    background-color: #64023b; /* color de fondo de cada proyecto */
+    background-color: #65adf0; /* color de fondo de cada proyecto */
     border-radius: 10px; /* para redondear las esquinas de cada proyecto */
     padding: 20px; /* espacio dentro de cada proyecto */
     text-align: center; /* para centrar el texto dentro de cada proyecto */
@@ -151,7 +162,7 @@ body{
 .proyecto-contenedor article h3{
     font-size: 1.2rem; /* tamaño del título del proyecto */
     margin-bottom: 10px; /* espacio debajo del título del proyecto */
-    color: #4C8200; /* color del título del proyecto */
+    color: #00090f; /* color del título del proyecto */
     font-weight: bold; /* para hacer el título del proyecto un poco más grueso */
 }
 
@@ -163,30 +174,34 @@ body{
 }
 
 .proyecto-contenedor article a{
-    color: #004C82; /* color del enlace del proyecto */
+    color: #011835; /* color del enlace del proyecto */
     text-decoration: none; /* para quitar el subrayado del enlace del proyecto */
     font-weight: 500; /* para hacer el enlace del proyecto un poco más grueso */
 }
 
 .proyecto-contenedor article a:hover{
-    color: #5CFFEF; /* color del enlace del proyecto al pasar el mouse */
+    color: whitesmoke; /* color del enlace del proyecto al pasar el mouse */
     transition:  color 0.2s; /* para suavizar el cambio de color del enlace del proyecto */
 }
 
 /* Estilos para la sección de contacto */
 
 .contacto{
-    margin:     0 auto; /* para centrar la sección y agregar espacio alrededor */
-    background-color: #64023b; /* color de fondo de la sección */
+    margin:0 auto; /* para centrar la sección y agregar espacio alrededor */
+    background-color: #65adf0; /* color de fondo de la sección */
     border-radius: 10px; /* para redondear las esquinas de la sección */
     padding: 20px; /* espacio dentro de la sección */
     width: 80%; /* para que la sección ocupe el 80% del ancho de la página */
+    max-height: fit-content; 
+    height: 100vh;
+    place-content: center;
 }
+    
 
 .contacto h2{
     font-size: 1.5rem; /* tamaño del título */
     margin-bottom: 10px; /* espacio debajo del título */
-    color: #4C8200; /* color del título */
+    color: #00090f; /* color del título */
     font-weight: bold; /* para hacer el título un poco más grueso */
     display: flex; /* para organizar el contenido en una fila */
     justify-content: center; /* para centrar el título horizontalmente */
@@ -198,11 +213,11 @@ body{
     gap: 20px;     /*Espacio entre tarjetas: 20px horizontal y vertical */
     margin-top: 20px; /* espacio superior */
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .contacto-contenedor p label{
-    color: #004C82;
+    color: #00090f;
 }
 
 /* Estilos para la página de mascotas */
@@ -210,7 +225,7 @@ body{
 .descripcion-gatos{
     margin-top: 20px;
     justify-content: center; /* para centrar el texto horizontalmente */
-    color: #4C8200;
+    color: #00090f;
 }
 
 .descripcion-gatos p{
@@ -220,14 +235,16 @@ body{
 }
 
 .tarjetas{
-    background-color: #64023b;
+    background-color: #65adf0;
     border-radius: 10px;
     padding: 10px;
-    margin: 10px auto; /* para centrar la tarjeta y agregar espacio alrededor */
+    margin-top: 60px;
+    margin: 10px; /* para centrar la tarjeta y agregar espacio alrededor */
     width: 350px;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
+    
 }
 
 .panel-mascotas{
@@ -251,6 +268,7 @@ body{
     display: flex;
     justify-content: center; /* para centrar el botón horizontalmente */
     margin-top: 30px; /* espacio superior */
+    max-height: fit-content;
 }
 
 .volver-inicio button {
@@ -262,14 +280,14 @@ body{
     cursor: pointer; /* para cambiar el cursor al pasar sobre el botón */
 }
 .volver-inicio button a {
-    color: #4C8200; /* color del texto del enlace dentro del botón */
+    color: #00090f; /* color del texto del enlace dentro del botón */
     text-decoration: none; /* para quitar el subrayado del enlace */
 }
 
 .volver-inicio button a:hover {
     font-size:   0.95rem; /* para hacer la letra un poco más grande al pasar el mouse */
     font-weight: 500; /* para hacer la letra un poco más gruesa al pasar el mouse */
-    color: #000F1A; /* color de la letra al pasar el mouse */
+    color: whitesmoke; /* color de la letra al pasar el mouse */
     transition:  color 0.2s; /* para suavizar el cambio de color */
 }
 
