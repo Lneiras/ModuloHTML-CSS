@@ -1,0 +1,25 @@
+
+/*En esta página se trabajará el CSS del btn de volver a inicio en la página de mascotas*/
+
+.volver-inicio{
+    display: flex;
+    justify-content: center; /* para centrar el botón horizontalmente */
+    margin-top: 2rem; /* espacio superior */
+}
+
+.volver-inicio a {
+    color: var(--color-texto); /* color del texto del enlace dentro del botón */
+    text-decoration: none; /* para quitar el subrayado del enlace */
+    font-weight: solid;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: var(--backgorund-btn-incio)
+}
+
+.volver-inicio a:hover {
+    font-size:   0.95rem; /* para hacer la letra un poco más grande al pasar el mouse */
+    font-weight: 700; /* para hacer la letra un poco más gruesa al pasar el mouse */
+    color: var(--color-hover-btn-incio); /* color de la letra al pasar el mouse */
+    transition:  color 0.2s; /* para suavizar el cambio de color */
+    background-color: var(--backgorund-hover-btn-incio)
+}

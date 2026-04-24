@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Laura Neira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">    
 </head>
 <body>
-    <header id="encabezado">
+    <header>
         <h1>Laura Neira</h1>
         <nav>
             <ul>
                 <a href="#sobre-mi">Sobre mí</a>
                 <a href="#proyectos">Proyectos</a>
+                <a href="mailto:lauraneira62@gmail.com">Contacto</a> 
+                <!--Con este botón lo redirigimos a su correo para que nos envíe un mensaje directamente.-->
                 <a href="mascotas.html">Mis Mascotas</a>
             </ul>
         </nav>
@@ -29,23 +35,30 @@
             </div>
             <!-- cajidta de presentacion -->
             <div class = "sobre-mi__contenido">
-            <h2>Hola, soy Laura</h2>
-            <p>Soy una desarrolladora de software junior centrada en crear soluciones prácticas y fortalecer mis bases de programación a través de proyectos enfocados en casos de uso reales.</p>
-            </div>
+            <h2>Hola, soy <span>Laura</span></h2>
+            <p>Soy una <span>desarrolladora de software junior </span>centrada en crear soluciones prácticas y fortalecer mis bases de programación a través de proyectos enfocados en casos de uso reales.</p>
+            <button class="btn-ver-mas" data-target="estudios">
+                Ver más
+            </button>
         </section>
 
-        <section class="estudios">
-            <div>
-                <h3>Actualmente aprendiendo</h3>
-                <ul>
-                    <li>Python avanzado (código limpio, estructura, mejores prácticas)</li>
-                    <li>HTML y CSS (fundamentos del desarrollo web)</li>
-                    <li>SQL (diseño y consultas de bases de datos)</li>
-                    <li>Scrum (metodologías ágiles y trabajo en equipo)</li>
-                    <li>Markdown (documentación técnica)</li>
-                </ul>
-            </div>
-        </section>
+    <section id="estudios" class="oculto">
+        <div>
+            <h3>Actualmente aprendiendo</h3>
+            <ul>
+                <li>Python avanzado (código limpio, estructura, mejores prácticas)</li>
+                <li>HTML y CSS (fundamentos del desarrollo web)</li>
+                <li>SQL (diseño y consultas de bases de datos)</li>
+                <li>Scrum (metodologías ágiles y trabajo en equipo)</li>
+                <li>Markdown (documentación técnica)</li>
+            </ul>
+        </div>
+        <button class="btn-ver-mas" data-target="estudios">
+            Ver más
+        </button>
+    </section>
+
+
 
         <section id="proyectos" class="proyectos">
             <h2>Proyectos Destacados</h2>
@@ -53,18 +66,18 @@
                 <article>
                     <h3>Sistema de gestión de inventario en python</h3>
                     <p>Aplicación para la gestión de productos con persistencia de datos mediante archivos CSV</p>
-                    <a href="https://github.com/Lneiras/Proyecto-inventario-Riwi.git" target="_blank">ver proyecto en github</a>
+                    <a href="https://github.com/Lneiras/Proyecto-inventario-Riwi.git" target="_blank">Ver en github</a>
                     <!-- con 'target="_blank"' hace que el enlace se abra en otra pagina-->
                 </article>
                 <article>
                     <h3>Sistema de gestión de estudiantes</h3>
                     <p>Aplicación para la gestión de información de estudiantes con funcionalidades de registro, edición y eliminación.</p>
-                    <a href="https://github.com/Lneiras/Sistema-Gesti-n-Estudiantes.git" target="_blank">ver proyecto en github</a>
+                    <a href="https://github.com/Lneiras/Sistema-Gesti-n-Estudiantes.git" target="_blank">Ver en github</a>
                 </article>
                 <article>
                     <h3>Sistema de gestión de clientes para un gimnasio</h3>
                     <p>Aplicación para la gestión de información de clientes con funcionalidades de registro, edición, búsqueda y eliminación.</p>
-                    <a href="https://github.com/Lneiras/Sistema-de-Gesti-n-de-Clientes-para-un-Gimnasio.git" target="_blank">ver proyecto en github</a>
+                    <a href="https://github.com/Lneiras/Sistema-de-Gesti-n-de-Clientes-para-un-Gimnasio.git" target="_blank">Ver en github</a>
                 </article>
             </div>
         </section>  
@@ -73,31 +86,33 @@
             <h2>Contacto</h2>
             <div class="contacto-contenedor">
             <form action="" method="post">
-                <p>
+                <div>
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre">
-                </p>
-                <p>
+                </div>
+                <div>
                     <label for="telefono">Teléfono:</label>
                     <input type="tel" name="telefono" id="telefono" title="ingresa 10 digitos" pattern="[0-9]{10}">
                     <!-- con type="tel" se espera que el usuario ingrese un número de teléfono, aunque no es obligatorio, pero si se ingresa algo que no es un número de teléfono, el formulario no se enviará-->
                     <!-- con patttern le decimos al usuario con ([0-9]) que ingrese numeros del cero al 9 y con {10} que son 10 caracteres -->
-                </p>
-                <p>
+                </div>
+                <div>
                     <label for="email">Emaril:</label>
                     <input type="email" name="correo electronico" id="email" required placeholder="correo@example.com"> 
                     <!-- con required hacemos que el campo sea obligatorio-->
                     <!-- con placeholder damos un ejemplo de lo que se debe escribir en el campo-->
-                </p>
-                <button type="submit">Enviar</button>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
             </form>
             </div>
         </section>
 
     </main>
-    <footer class="pie-de-pagina">
+    <footer>
         <p>© 2026 Laura Neira. Todos los derechos reservados.</p>
     </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>

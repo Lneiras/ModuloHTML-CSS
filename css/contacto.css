@@ -1,0 +1,54 @@
+/* En esta página se trabajarán los estilos para la sección de contacto */
+
+.contacto{
+    margin: 0 auto; /* para centrar la sección y agregar espacio alrededor */
+    background-color: var(--fondo-tarjeta); /* color de fondo de la sección */
+    border-radius: 1rem; /* para redondear las esquinas de la sección */
+    padding: 1rem; /* espacio dentro de la sección */
+    width: 80%; /* para que la sección ocupe el 80% del ancho de la página */
+    max-height: fit-content; 
+    height: 100vh;
+    place-content: center;
+}
+    
+
+.contacto h2{
+    font-size: 2rem; /* tamaño del título */
+    margin-bottom: 10px; /* espacio debajo del título */
+    color: var(--color-titulos); /* color del título */
+    font-weight: bold; /* para  aplicar negrita*/
+    display: flex; /* para organizar el contenido en una fila */
+    justify-content: center; /* para centrar el título horizontalmente */
+    align-items: center; /* para alinear verticalmente el título */
+}
+
+.contacto-contenedor div{
+    display: flex;
+    gap: 20px;     /*Espacio entre tarjetas: 20px horizontal y vertical */
+    margin-top: 1.5rem; /* espacio superior */
+    align-items: center;
+    justify-content: center;    
+}
+
+.contacto-contenedor div label{
+    color: var(--color-texto);
+}
+
+.contacto-contenedor div button {
+    margin-top: 15px;
+    text-decoration: none; 
+    font-weight: solid;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--backgorund-btn-incio);
+    cursor: pointer;
+}
+
+.contacto-contenedor div button:hover{
+    font-size:   0.95rem; 
+    font-weight: 700; 
+    color: var(--color-hover-btn-incio); 
+    transition: 0.2s; 
+    background-color: var(--backgorund-hover-btn-incio)
+}

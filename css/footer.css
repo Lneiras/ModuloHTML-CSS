@@ -1,0 +1,11 @@
+/* En esta página se trabajarán los estilos para el footer */
+
+footer{
+    position: static;
+    bottom: 0;
+    /*con 'bottom' y 'position' fijamos el footer al final de la pagina*/
+    text-align: left; /* para alinear el texto a la izquierda */
+    padding: 20px;  
+    margin-top: 2rem;
+    color: var(--color-texto);
+}

@@ -1,0 +1,83 @@
+/* En esta página se trabajarán los estilos para la sección de sobre mi */
+
+.sobre-mi{
+    display: flex; /* para organizar el contenido en una fila */
+    align-items: center; /* para alinear verticalmente el contenido */
+    gap: 1.5rem; /* espacio entre la imagen y el texto */
+    padding: 1rem; /* espacio dentro de la sección */
+    margin-top: 3rem;
+    height: 100vh;
+    place-content: center;
+}
+
+.foto-perfil__contenedor {
+    width: 30%; /* para que la imagen ocupe el 30% del ancho de la sección */
+    height: auto; /* para que la altura se ajuste automáticamente */
+    display: flex; /* para organizar el contenido en una fila */
+    justify-content: center; /* para centrar la imagen horizontalmente */
+    gap: 1.5rem; /* espacio entre la imagen y el texto */
+}
+.foto-perfil img {
+    flex-shrink: 0;  /* no se encoge */
+    width: 250px; /* ancho fijo */
+    height: 250px; /* alto fijo para mantener la forma circular */
+    border-radius: 50%; /* para hacer la imagen circular */
+    display: flex; /* para organizar el contenido en una fila */
+    align-items: center; /* para alinear verticalmente el contenido */
+    justify-content: center;   /* para centrar la imagen horizontalmente */
+    border: 0.2rem solid var(--borde-hero);;
+    object-fit: cover;
+}
+
+.sobre-mi__contenido{
+    color: var(--color-texto);
+    max-width: 600px;
+    font-size: 1rem; /* tamaño de la letra */
+    line-height: 1.5; /* espacio entre líneas */
+}
+
+.sobre-mi__contenido span{
+    color: var(--color-titulos);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.sobre-mi__contenido h2{
+    font-size: 2rem; /* tamaño del título */
+    margin-bottom: 1rem; /* espacio debajo del título */
+    color: var(--color-texto);
+    font-weight: bold;
+}
+
+.sobre-mi__contenido h2 span{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-titulos); 
+    font-weight: bold;
+}
+
+
+/*Este botón utiliza JavaScript para mostrar más información*/
+
+.oculto {
+    display: none;
+}
+
+.btn-ver-mas {
+    margin-top: 15px;
+    text-decoration: none; 
+    font-weight: solid;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--backgorund-btn-incio);
+    cursor: pointer;
+}
+
+.btn-ver-mas:hover {
+    font-size:   0.95rem; 
+    font-weight: 700; 
+    color: var(--color-hover-btn-incio); 
+    transition: 0.2s; 
+    background-color: var(--backgorund-hover-btn-incio)
+}

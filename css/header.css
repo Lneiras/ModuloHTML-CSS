@@ -1,0 +1,36 @@
+/* En esta página se trabajarán los estilos para el header */
+
+header{
+    /* esto deja el encabezado fijo en la parte de arriba de la pagina */
+    position: fixed;   /* esto hace que cuando nos desplazemos el encabezado se siga viendo */
+    top: 0;            /* Lo pega al techo */
+    left: 0;           /* Lo pega a la izquierda */
+    width: 100%;       /* Asegura que ocupe todo el ancho de la pantalla */
+    z-index: 1000;     /* Lo pone "encima" de todo lo demás */
+    /**/
+
+    background: var(--color-fondo-encabezado); /* color de fondo del encabezado */
+    color: var(--color-logo);
+    padding:  0 2rem; 
+    /* espacio dentro del encabezado, 1rem equivale a 16px */
+    height: 4rem; /*Esto es la altura del encabezado*/
+    border-bottom:   0.1rem solid white; 
+    /* línea de separación debajo del encabezado */
+    display: flex; /* para organizar el contenido en una fila */
+    justify-content: space-between; /* para separar el título y la navegación */
+    align-items: center; /* para alinear verticalmente el contenido del encabezado*/
+}
+
+nav a{
+    color:var(--color-texto-encabezado); /* color de la letra */
+    text-decoration: none; /* para quitar subrayado */
+    margin-left: 20px; /* espacio entre enlaces de 20 pixeles */
+    font-weight: solid; /* aplica negrita */
+}
+
+nav a:hover{
+    color: var(--color-hover-nav);
+    font-size:   0.95rem; /* para hacer la letra un poco más grande al pasar el mouse */
+    font-weight: 700; /* para hacer la letra un poco más gruesa al pasar el mouse */
+    transition:  color 0.2s; /* para suavizar el cambio de color */
+}

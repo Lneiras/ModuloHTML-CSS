@@ -1,0 +1,42 @@
+
+/* En esta página se trabajarán los estilos para la sección de mascotas */
+
+.descripcion-gatos{
+    margin-top: 1rem;
+    justify-content: center; /* para centrar el texto horizontalmente */
+    color: var(--color-titulos);
+}
+
+.descripcion-gatos p{
+    color: var(--color-texto); /* color del texto */
+    font-size: 1rem; /* tamaño de la letra */
+    line-height: 1.5; /* espacio entre líneas */
+}
+
+.tarjetas{
+    background-color: var(--fondo-tarjeta);
+    border-radius: 1rem;
+    padding: 10px;
+    margin-top: 4rem;
+    margin: 0.2rem; /* para centrar la tarjeta y agregar espacio alrededor */
+    width: 350px;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.panel-mascotas{
+    display: flex;
+    margin-top: 6rem;
+    flex-wrap: wrap; /* para permitir que las tarjetas se ajusten a la siguiente línea si no caben en una sola fila */
+    justify-content: center; /* para centrar las tarjetas horizontalmente */
+    gap: 1rem; /* espacio entre las tarjetas */
+}
+
+.img-gatos img {
+    width: 300px; /* ancho fijo */
+    height: 250px;  /* alto fijo */ 
+    object-fit: cover; /* para asegurarse de que la imagen se ajuste al contenedor sin distorsionarse */
+    border-radius: 2rem; /* para redondear las esquinas de la imagen */
+}
