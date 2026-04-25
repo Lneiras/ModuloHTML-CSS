@@ -1,2 +1,23 @@
 
+/* tablets */
+@media (min-width: 768px) {
+    .proyecto-contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas de proyectos */
+    }
+
+    .sobre-mi {
+        flex-direction: row; /* Foto a un lado, texto al otro */
+        align-items: center;
+        text-align: left;
+    }
+}
+
+/* pantallas normales */
+@media (min-width: 1024px) {
+    .proyecto-contenedor {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas de proyectos */
+    }
+    
+}
 

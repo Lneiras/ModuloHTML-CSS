@@ -20,10 +20,12 @@
 }
 
 .proyecto-contenedor{
-    display: grid; /* para organizar el contenido en una cuadrícula */
+    display: flex; 
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño (1fr = 1 fracción del espacio) */
     gap: 1.5rem;     /*Espacio entre tarjetas: 20px horizontal y vertical */
     margin-top: 2.5rem; /* espacio superior */
+    flex-direction: column; /* Un proyecto debajo de otro en móvil */
+    gap: 2rem;
 }
 
 .proyecto-contenedor article{

@@ -2,6 +2,8 @@
 
 .sobre-mi{
     display: flex; /* para organizar el contenido en una fila */
+    flex-direction: column;
+    text-align: center;
     align-items: center; /* para alinear verticalmente el contenido */
     gap: 1.5rem; /* espacio entre la imagen y el texto */
     padding: 1rem; /* espacio dentro de la sección */
@@ -54,30 +56,4 @@
     margin-bottom: 1rem;
     color: var(--color-titulos); 
     font-weight: bold;
-}
-
-
-/*Este botón utiliza JavaScript para mostrar más información*/
-
-.oculto {
-    display: none;
-}
-
-.btn-ver-mas {
-    margin-top: 15px;
-    text-decoration: none; 
-    font-weight: solid;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--backgorund-btn-incio);
-    cursor: pointer;
-}
-
-.btn-ver-mas:hover {
-    font-size:   0.95rem; 
-    font-weight: 700; 
-    color: var(--color-hover-btn-incio); 
-    transition: 0.2s; 
-    background-color: var(--backgorund-hover-btn-incio)
 }

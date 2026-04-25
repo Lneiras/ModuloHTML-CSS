@@ -53,12 +53,15 @@ header{
 
 /* Adaptabilidad del menú del encabezado a las pantallas pequeñas con JS*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .abrir-menu,
     .cerrar-menu{
         display: block;
         font-size: 1.5rem;
         cursor: pointer;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.5rem;
+        background-color: var(--backgorund-btn-incio);
     }
 
     .nav{
@@ -81,12 +84,16 @@ header{
         visibility: visible;
     }
 
-    .nav-list li a {
-        display: flex;
+    .nav-list{
         flex-direction: column; /*se muestra uno abajo de otro*/
         align-items: end; /* lo alinea a la derecha */
+    }
+
+    .nav-list li a {
         color: var(--color-texto-encabezado);
         list-style: none;
     }
+
+
 
 }

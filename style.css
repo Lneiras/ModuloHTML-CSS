@@ -21,6 +21,13 @@ body{
     padding: 0px;
 }
 
+
+main {
+    display: flex;
+    flex-direction: column; /* Apila secciones verticalmente */
+    gap: 2rem;             /* Crea un espacio real entre cada sección */
+}
+
 /*En esta parte del archivo se generan las variables de color utilizadas en las demás páginas para que el cambio de cada elemento de color dentro de las páginas se pueda realizar de manera rápida*/
 
 :root{
