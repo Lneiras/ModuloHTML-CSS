@@ -6,6 +6,7 @@
 @import "css/contacto.css";
 @import "css/proyectos.css";
 @import "css/sobre-mi.css";
+@import "css/responsive.css";
 
 
 *{
@@ -38,8 +39,8 @@ body{
     --fondo-tarjeta: #b4aa7e1c;
     /*Esto es para el borde de la imagen del 'hero'*/
     --borde-hero: #f5c60c;
-
-    
+    /* Esto es para el color del borde del encabezado*/  
+    --color-borde: white;
 
 
 /*Este tipo de letra es tomado de google fonts*/

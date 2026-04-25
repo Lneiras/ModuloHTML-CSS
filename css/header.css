@@ -14,23 +14,79 @@ header{
     padding:  0 2rem; 
     /* espacio dentro del encabezado, 1rem equivale a 16px */
     height: 4rem; /*Esto es la altura del encabezado*/
-    border-bottom:   0.1rem solid white; 
+    border-bottom:   0.1rem solid var(--color-borde); 
     /* línea de separación debajo del encabezado */
     display: flex; /* para organizar el contenido en una fila */
     justify-content: space-between; /* para separar el título y la navegación */
     align-items: center; /* para alinear verticalmente el contenido del encabezado*/
 }
 
-nav a{
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a { 
     color:var(--color-texto-encabezado); /* color de la letra */
     text-decoration: none; /* para quitar subrayado */
-    margin-left: 20px; /* espacio entre enlaces de 20 pixeles */
     font-weight: solid; /* aplica negrita */
 }
 
-nav a:hover{
+.nav-list li a:hover{
     color: var(--color-hover-nav);
     font-size:   0.95rem; /* para hacer la letra un poco más grande al pasar el mouse */
     font-weight: 700; /* para hacer la letra un poco más gruesa al pasar el mouse */
     transition:  color 0.2s; /* para suavizar el cambio de color */
+}
+
+/* Estos son los botones para el menú hamburguesa.*/
+
+.abrir-menu{
+    display: none;  
+}
+
+.cerrar-menu{
+    display:none;
+}
+
+
+/* Adaptabilidad del menú del encabezado a las pantallas pequeñas con JS*/
+
+@media screen and (max-width: 600px) {
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end; /*para que se vaya a la derecha*/
+        gap: 1rem;
+        position: absolute;
+        top: 0; /* lo muestra arriba*/
+        right: 0; 
+        background-color: var(--color-fondo-encabezado);
+        padding: 2rem;
+        border-bottom:  0.1rem solid var(--color-borde); 
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list li a {
+        display: flex;
+        flex-direction: column; /*se muestra uno abajo de otro*/
+        align-items: end; /* lo alinea a la derecha */
+        color: var(--color-texto-encabezado);
+        list-style: none;
+    }
+
 }
