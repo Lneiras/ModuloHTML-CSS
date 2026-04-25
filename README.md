@@ -17,10 +17,12 @@ El proyecto incluye:
 ## 📁 Estructura del Proyecto
 El proyecto está organizado de manera modular para facilitar el mantenimiento:
 
-📂 assets/          # Iconos y fotografías
-📂 css/             # Archivos CSS fragmentados (header, footer, responsive, etc.)
-📄 index.html       # Página principal
-📄 mascotas.html    # Sección de galería de mascotas
-📄 style.css        # Archivo maestro que importa todos los estilos
-📄 script.js        # Lógica del menú interactivo
-📄 README.md        # Documentación del proyecto
+```
+📂 assets/             # Iconos y fotografías.
+📂 css/                # Archivos CSS fragmentados (header, footer, responsive, etc.).
+📄 index.html          # Página principal.
+📄 mascotas.html       # Sección de galería de mascotas.
+📄 style.css           # Archivo maestro que importa todos los estilos.
+📄 script.js           # Lógica del menú interactivo.
+📄 README.md           # Documentación del proyecto.
+```
